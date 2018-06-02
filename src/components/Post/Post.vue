@@ -16,13 +16,12 @@
     <BaseCard :class="$style.article">
       <BaseTitle>{{ post.title }}</BaseTitle>
       <BreadCrumb :class="$style.breadCrumb" :datas="post.titleDatas"/>
-      <BaseArticle>{{ post.text }}</BaseArticle>
+      <BaseArticle :value="post.text" />
     </BaseCard>
     <router-view />
   </BaseFullScreen>
 </template>
 <script>
-import VueMarkdown from 'vue-markdown'
 import BaseFullScreen from '@/common/BaseFullScreen'
 import BaseCard from '@/common/BaseCard'
 import BaseBack from '@/common/BaseBack'
@@ -36,7 +35,6 @@ import SVGComment from '@/common/SVG/SVGComment'
 
 export default {
   components: {
-    VueMarkdown,
     BaseFullScreen,
     BaseCard,
     BaseBack,

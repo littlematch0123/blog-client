@@ -1,12 +1,17 @@
 <template>
-  <VueMarkdown :class="$style.main"><slot /></VueMarkdown>
+  <div :class="$style.main" v-html="compiledMarksdown" />
 </template>
 <script>
-import VueMarkdown from 'vue-markdown'
+import marked from 'marked'
 
 export default {
-  components: {
-    VueMarkdown
+  props: {
+    value: { type: String, default: '' }
+  },
+  computed: {
+    compiledMarksdown() {
+      return marked(this.value, { headerIds: false })
+    }
   }
 }
 </script>

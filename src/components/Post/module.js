@@ -7,7 +7,7 @@ export const LOAD_POST = 'LOAD_POST'
 export const LOAD_POST_ASYNC = 'LOAD_POST_ASYNC'
 export const CLEAR_POST = 'CLEAR_POST'
 
-const posts = {
+const post = {
   state: {
     docs: [],
     doc: null
@@ -109,4 +109,4 @@ const posts = {
     }
   }
 }
-export default posts
+export default post
