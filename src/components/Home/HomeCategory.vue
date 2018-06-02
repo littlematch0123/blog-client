@@ -6,7 +6,7 @@
     </header>
     <ul
       :class="$style['main']"
-      :style="{'background-image': `url(${require('@/assets/imgs/category-bg.jpg')})`}"
+      :style="{'background-image': `url(${require('@/assets/imgs/match-bg.jpg')})`}"
     >
       <li
         v-for="item in categoryDatas"
@@ -73,6 +73,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 6px;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
