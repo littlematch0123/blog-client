@@ -40,6 +40,6 @@ app.get('*', (req, res) => {
 })
 
 app.on('error', err => console.log(err))
-app.listen(8080, () => {
-  console.log(`vue ssr started at localhost:8080`)
+app.listen(4002, () => {
+  console.log(`vue ssr started at localhost: 4002`)
 })
