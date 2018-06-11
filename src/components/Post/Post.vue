@@ -34,6 +34,9 @@ import SVGLike from '@/common/SVG/SVGLike'
 import SVGComment from '@/common/SVG/SVGComment'
 
 export default {
+  asyncData({ store, route }) {
+    return store.dispatch(LOAD_POST_ASYNC, { id: route.params.postid })
+  },
   components: {
     BaseFullScreen,
     BaseCard,
@@ -63,9 +66,6 @@ export default {
     commentsCount() {
       return this.$store.getters.getCommentsCountByPostId(this.postId)
     }
-  },
-  created() {
-    this.$store.dispatch(LOAD_POST_ASYNC, { id: this.postId })
   },
   beforeDestroy() {
     this.$store.commit(CLEAR_POST)

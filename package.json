@@ -8,7 +8,9 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js",
+    "build:client": "node build/build.js",
+    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.conf.js --progress --hide-modules",
+    "build": "rimraf dist && npm run build:client && npm run build:server",
     "lintcss": "stylelint **/*.vue"
   },
   "dependencies": {
@@ -65,6 +67,7 @@
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
+    "vue-server-renderer": "^2.5.16",
     "vue-style-loader": "^3.0.1",
     "vue-styled-components": "^1.2.1",
     "vue-template-compiler": "^2.5.2",

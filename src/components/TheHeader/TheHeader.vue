@@ -16,12 +16,8 @@ import SVGLogo from '@/common/SVG/SVGLogo'
 import BaseAvatar from '@/common/BaseAvatar'
 import BaseMask from '@/common/BaseMask'
 import UserMenuList from '@/components/User/UserMenuList'
-import { mapState, mapGetters } from 'vuex'
-import { LOAD_CATEGORIES_ASYNC } from '@/components/Category/module'
-import { LOAD_POSTS_ASYNC } from '@/components/Post/module'
-import { LOAD_LIKES_ASYNC } from '@/components/Like/module'
-import { LOAD_COMMENTS_ASYNC } from '@/components/Comment/module'
-import { LOAD_USERS_ASYNC, SIGNIN } from '@/components/User/module'
+import { SIGNIN } from '@/components/User/module'
+import { mapState } from 'vuex'
 
 export default {
   components: {
@@ -40,18 +36,9 @@ export default {
     ...mapState({
       token: state => state.auth.token,
       user: state => state.auth.user
-    }),
-    ...mapGetters([
-      'postCount',
-      'categoryCount',
-      'likeCount',
-      'commentCount',
-      'userCount'
-    ])
+    })
   },
   mounted() {
-    // 获取异步信息
-    this.loadAsync()
     // 自动登录
     this.autoLogin()
     // 监测陀螺仪
@@ -62,20 +49,6 @@ export default {
     window.removeEventListener('deviceorientation', this.changeBeta)
   },
   methods: {
-    loadAsync() {
-      const { postCount, categoryCount, userCount, likeCount, commentCount } = this
-      const { dispatch } = this.$store
-      // 获取类别信息
-      !categoryCount && dispatch(LOAD_CATEGORIES_ASYNC)
-      // 获取文章信息
-      !postCount && dispatch(LOAD_POSTS_ASYNC)
-      // 获取点赞信息
-      !likeCount && dispatch(LOAD_LIKES_ASYNC)
-      // 获取评论信息
-      !commentCount && dispatch(LOAD_COMMENTS_ASYNC)
-      // 获取用户信息
-      !userCount && dispatch(LOAD_USERS_ASYNC)
-    },
     autoLogin() {
       const { commit } = this.$store
       // 如果storage中存在token，则使用storage中保存的信息进行自动登录

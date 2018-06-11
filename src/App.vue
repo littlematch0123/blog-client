@@ -86,7 +86,8 @@ export default {
   }
 }
 </script>
-<style module>
+<style module lang="postcss">
+@import 'assets/style.css';
 html {
   height: 100%;
 }

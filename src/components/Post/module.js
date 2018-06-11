@@ -34,8 +34,9 @@ const post = {
       if (doc) {
         return {
           ...doc,
-          titleDatas: doc.category ? getCategoryNumbers(doc.category.number).map(t => getters.getCategoriesByNumber[t].name) : [],
-          text: decodeURIComponent(escape(window.atob(doc.content)))
+          titleDatas: doc.category && Object.keys(getters.getCategoriesByNumber).length !== 0
+            ? getCategoryNumbers(doc.category.number).map(t => getters.getCategoriesByNumber[t].name) : [],
+          text: typeof window === 'object' ? decodeURIComponent(escape(window.atob(doc.content))) : ''
         }
       }
       return null

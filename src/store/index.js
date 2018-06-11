@@ -9,14 +9,16 @@ import size from '@/components/Size/module'
 import comment from '@/components/Comment/module'
 
 Vue.use(Vuex)
-export default new Vuex.Store({
-  modules: {
-    auth,
-    alert,
-    post,
-    category,
-    like,
-    size,
-    comment
-  }
-})
+export default function createStore() {
+  return new Vuex.Store({
+    modules: {
+      auth,
+      alert,
+      post,
+      category,
+      like,
+      size,
+      comment
+    }
+  })
+}
