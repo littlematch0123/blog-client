@@ -15,7 +15,7 @@
     "static/js/categorylist.3145fb47c34d17ef9b77.js",
     "static/js/user.4f83202362d7aafdb2c0.js",
     "static/js/vendor.0741683f2f1e5de8c1a8.js",
-    "static/js/app.cca0c34d525fe52c8146.js",
+    "static/js/app.b33bc0801f1fa7dba341.js",
     "static/js/manifest.6ca449ca4a9df1ffcf23.js",
     "static/img/vue-big.172586f.jpg",
     "static/css/app.9619d1b401a38401676e768e734847c9.css.map",
@@ -30,14 +30,14 @@
     "static/js/categorylist.3145fb47c34d17ef9b77.js.map",
     "static/js/user.4f83202362d7aafdb2c0.js.map",
     "static/js/vendor.0741683f2f1e5de8c1a8.js.map",
-    "static/js/app.cca0c34d525fe52c8146.js.map",
+    "static/js/app.b33bc0801f1fa7dba341.js.map",
     "static/js/manifest.6ca449ca4a9df1ffcf23.js.map",
     "static/favicon.ico"
   ],
   "initial": [
     "static/js/manifest.6ca449ca4a9df1ffcf23.js",
     "static/js/vendor.0741683f2f1e5de8c1a8.js",
-    "static/js/app.cca0c34d525fe52c8146.js"
+    "static/js/app.b33bc0801f1fa7dba341.js"
   ],
   "async": [
     "static/js/vendor-async.8e122223ecd9f2e45718.js",
