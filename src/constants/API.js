@@ -1,4 +1,4 @@
-const API_HOSTNAME = 'https://api.xiaohuchai.cc'
+const API_HOSTNAME = 'https://api.xiaohuochai.cc'
 export const SIGNUP_URL = `${API_HOSTNAME}/auth/signup`
 export const SIGNIN_BYUSERNAME_URL = `${API_HOSTNAME}/auth/signin_by_username`
 export const SIGNIN_BYPHONENUMBER_URL = `${API_HOSTNAME}/auth/signin_by_phonenumber`
