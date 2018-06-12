@@ -14,7 +14,7 @@ export default function createRouter() {
       },
       {
         path: '/posts',
-        component: () => import(/* webpackChunkName:'postlist' */ '@/components/Post/PostList'),
+        component: () => import(/* webpackChunkName:'post' */ '@/components/Post/PostList'),
         name: 'postlist'
       },
       {
@@ -25,7 +25,7 @@ export default function createRouter() {
           {
             path: 'comments',
             name: 'commentlist',
-            component: () => import(/* webpackChunkName:'commentlist' */ '@/components/Comment/CommentList'),
+            component: () => import(/* webpackChunkName:'comment' */ '@/components/Comment/CommentList'),
             children: [
               {
                 path: 'add',
@@ -48,7 +48,7 @@ export default function createRouter() {
       },
       {
         path: '/categories',
-        component: () => import(/* webpackChunkName:'categorylist' */ '@/components/Category/CategoryList'),
+        component: () => import(/* webpackChunkName:'category' */ '@/components/Category/CategoryList'),
         name: 'categorylist'
       },
       {
@@ -64,19 +64,19 @@ export default function createRouter() {
       // 注册
       {
         path: '/signup',
-        component: () => import(/* webpackChunkName:'auth' */ '@/components/User/AuthSignup'),
+        component: () => import(/* webpackChunkName:'user' */ '@/components/User/AuthSignup'),
         name: 'signup'
       },
       // 按手机号登录
       {
         path: '/signin_by_phonenumber',
-        component: () => import(/* webpackChunkName:'auth' */ '@/components/User/AuthSigninByPhoneNumber'),
+        component: () => import(/* webpackChunkName:'user' */ '@/components/User/AuthSigninByPhoneNumber'),
         name: 'signin_by_phonenumber'
       },
       // 按用户名登录
       {
         path: '/signin_by_username',
-        component: () => import(/* webpackChunkName:'auth' */ '@/components/User/AuthSigninByUsername'),
+        component: () => import(/* webpackChunkName:'user' */ '@/components/User/AuthSigninByUsername'),
         name: 'signin_by_username'
       },
       // 用户页面

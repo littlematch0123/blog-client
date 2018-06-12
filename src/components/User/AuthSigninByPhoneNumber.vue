@@ -90,7 +90,6 @@ export default {
       // 清空验证码
       this.verificationCode = undefined
       // 跳转到登录前的页面或首页
-      console.log(this.$route)
       this.$router.push(this.$route.params.parentPath || '/')
     }
   }
