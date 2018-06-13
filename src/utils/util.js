@@ -77,3 +77,16 @@ export const getCategoryNumbers = number => {
   }
   return resultArr
 }
+
+/**
+ * 若该浏览器支持webp格式，则将返回webp图片的url，否则返回原url
+ * @param {string} 'https://static.xiaohuochai.site/20180612030117.png'
+ * @return {string} 'https://static.xiaohuochai.site/20180612030117.png?imageView2/1/format/webp'
+ */
+export const getUrlWithWebp = url => {
+  const isSupportWebp = !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0
+  if (isSupportWebp) {
+    return `${url}?imageView2/1/format/webp`
+  }
+  return url
+}

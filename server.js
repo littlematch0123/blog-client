@@ -36,9 +36,7 @@ app.get('*', (req, res) => {
     if (err) {
       return handleError(err)
     }
-    res.send(minify(html, {
-      collapseWhitespace: true// 去掉空格
-    }))
+    res.send(minify(html, { collapseWhitespace: true}))
   })
 })
 

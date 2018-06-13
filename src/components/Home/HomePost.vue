@@ -20,11 +20,13 @@
 </template>
 
 <script>
+import { getUrlWithWebp } from '@/utils/util'
 
 export default {
   computed: {
     recommendPosts() {
       return this.$store.getters.getRecommendPosts
+        .map(item => Object.assign(item, { imgUrl: getUrlWithWebp(item.imgUrl) }))
     }
   }
 }
