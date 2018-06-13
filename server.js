@@ -2,6 +2,7 @@ const express = require('express')
 const fs = require('fs')
 const path = require('path')
 const { createBundleRenderer } = require('vue-server-renderer')
+const { minify } = require('html-minifier')
 const app = express()
 const resolve = file => path.resolve(__dirname, file)
 
@@ -35,7 +36,9 @@ app.get('*', (req, res) => {
     if (err) {
       return handleError(err)
     }
-    res.send(html)
+    res.send(minify(html, {
+      collapseWhitespace: true// 去掉空格
+    }))
   })
 })
 
