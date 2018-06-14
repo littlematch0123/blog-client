@@ -4,9 +4,11 @@
     <BaseTitle>{{ category.name }}知识体系</BaseTitle>
     <main :class="$style.main">
       <p :class="$style.description">{{ category.description }}</p>
-      <ul v-for="(item, index) in childCategories" :key="index">
-        <BreadCrumb :class="$style['bread-crumb']" :datas="item.titleDatas"/>
-        <li
+      <dl v-for="(item, index) in childCategories" :key="index">
+        <dt>
+          <BreadCrumb :class="$style['bread-crumb']" :datas="item.titleDatas"/>
+        </dt>
+        <dd
           v-for="(innerItem, innerIndex) in item.posts"
           :key="innerIndex"
           :class="$style.item"
@@ -14,8 +16,8 @@
             name:'post',
             params: { postid: innerItem._id, parentPath: $route.path }
           })"
-        >{{ innerItem.title }}</li>
-      </ul>
+        >{{ innerItem.title }}</dd>
+      </dl>
     </main>
   </article>
 </template>
