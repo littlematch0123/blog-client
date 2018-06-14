@@ -2,7 +2,7 @@
   <header :class="$style.header">
     <div :class="$style.logoBox" @click="$router.push('/')">
       <SVGLogo height="32" width="32"/>
-      <h1 :class="$style.title">小火柴的蓝色理想</h1>
+      <h1 :class="$style.title">小火柴的前端小站</h1>
     </div>
     <BaseAvatar :style="{transform: `rotate(${beta}deg)`}" @click.native="onUserClick">
       {{ user ? user.username : '我' }}

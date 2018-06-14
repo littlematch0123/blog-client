@@ -1,7 +1,7 @@
 {
   "publicPath": "https://static.xiaohuochai.site/client/",
   "all": [
-    "static/css/app.11269941deba6d786671d80797ba7c31.css",
+    "static/css/app.205cc39eedbdacca951e2150985fe621.css",
     "static/img/react-big.282e404.jpg",
     "static/img/match-bg.0f9a8d7.jpg",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js",
@@ -11,10 +11,10 @@
     "static/js/post.dadf7a6c7dd894b945fa.js",
     "static/js/home.0972c4d7fb3e0401d0ca.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
-    "static/js/app.ec4ad4b93708ebd9478a.js",
+    "static/js/app.1559f600ced06eca37e3.js",
     "static/js/manifest.cab9b0b7ce73ff004762.js",
     "static/img/vue-big.172586f.jpg",
-    "static/css/app.11269941deba6d786671d80797ba7c31.css.map",
+    "static/css/app.205cc39eedbdacca951e2150985fe621.css.map",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js.map",
     "static/js/user.a12db82c6aee30d894bf.js.map",
     "static/js/comment.72ad9303bdd707799515.js.map",
@@ -22,14 +22,14 @@
     "static/js/post.dadf7a6c7dd894b945fa.js.map",
     "static/js/home.0972c4d7fb3e0401d0ca.js.map",
     "static/js/vendor.0c20caa6c98cd5dc3130.js.map",
-    "static/js/app.ec4ad4b93708ebd9478a.js.map",
+    "static/js/app.1559f600ced06eca37e3.js.map",
     "static/js/manifest.cab9b0b7ce73ff004762.js.map",
     "static/favicon.ico"
   ],
   "initial": [
     "static/js/manifest.cab9b0b7ce73ff004762.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
-    "static/js/app.ec4ad4b93708ebd9478a.js"
+    "static/js/app.1559f600ced06eca37e3.js"
   ],
   "async": [
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js",
@@ -488,6 +488,11 @@
       9,
       20
     ],
+    "0e015f4a": [
+      10,
+      0,
+      21
+    ],
     "76a5fd0f": [
       9,
       20
@@ -508,14 +513,14 @@
       5,
       16
     ],
-    "4230ace2": [
-      10,
-      0,
-      21
-    ],
     "77a8ec0d": [
       9,
       20
+    ],
+    "377ccdcb": [
+      10,
+      0,
+      21
     ],
     "6bf9f950": [
       9,
@@ -605,11 +610,6 @@
     "6784a0d0": [
       9,
       20
-    ],
-    "1c4ce464": [
-      10,
-      0,
-      21
     ],
     "185281e3": [
       9,
@@ -945,7 +945,12 @@
       9,
       20
     ],
-    "4c602786": [
+    "270d0c7c": [
+      10,
+      0,
+      21
+    ],
+    "12ed600e": [
       10,
       0,
       21
@@ -1007,11 +1012,6 @@
     "f9306e2e": [
       3,
       14
-    ],
-    "4eb6837b": [
-      10,
-      0,
-      21
     ],
     "ae47ec08": [
       9,
