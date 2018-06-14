@@ -1,33 +1,33 @@
 {
   "publicPath": "https://static.xiaohuochai.site/client/",
   "all": [
-    "static/css/app.f4666088984afe75a121705d99768573.css",
+    "static/css/app.6dd42de0fed6da36a4996fd8298b6814.css",
     "static/img/react-big.282e404.jpg",
     "static/img/match-bg.0f9a8d7.jpg",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js",
     "static/js/user.a12db82c6aee30d894bf.js",
     "static/js/comment.72ad9303bdd707799515.js",
     "static/js/category.4f5423dcc075d39956e5.js",
-    "static/js/post.dadf7a6c7dd894b945fa.js",
+    "static/js/post.1785a5bc85adcd30923e.js",
     "static/js/home.0972c4d7fb3e0401d0ca.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
     "static/js/app.1559f600ced06eca37e3.js",
-    "static/js/manifest.cab9b0b7ce73ff004762.js",
+    "static/js/manifest.8b741b0c730c63dccea2.js",
     "static/img/vue-big.172586f.jpg",
-    "static/css/app.f4666088984afe75a121705d99768573.css.map",
+    "static/css/app.6dd42de0fed6da36a4996fd8298b6814.css.map",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js.map",
     "static/js/user.a12db82c6aee30d894bf.js.map",
     "static/js/comment.72ad9303bdd707799515.js.map",
     "static/js/category.4f5423dcc075d39956e5.js.map",
-    "static/js/post.dadf7a6c7dd894b945fa.js.map",
+    "static/js/post.1785a5bc85adcd30923e.js.map",
     "static/js/home.0972c4d7fb3e0401d0ca.js.map",
     "static/js/vendor.0c20caa6c98cd5dc3130.js.map",
     "static/js/app.1559f600ced06eca37e3.js.map",
-    "static/js/manifest.cab9b0b7ce73ff004762.js.map",
+    "static/js/manifest.8b741b0c730c63dccea2.js.map",
     "static/favicon.ico"
   ],
   "initial": [
-    "static/js/manifest.cab9b0b7ce73ff004762.js",
+    "static/js/manifest.8b741b0c730c63dccea2.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
     "static/js/app.1559f600ced06eca37e3.js"
   ],
@@ -36,7 +36,7 @@
     "static/js/user.a12db82c6aee30d894bf.js",
     "static/js/comment.72ad9303bdd707799515.js",
     "static/js/category.4f5423dcc075d39956e5.js",
-    "static/js/post.dadf7a6c7dd894b945fa.js",
+    "static/js/post.1785a5bc85adcd30923e.js",
     "static/js/home.0972c4d7fb3e0401d0ca.js"
   ],
   "modules": {
@@ -60,7 +60,7 @@
       6,
       17
     ],
-    "19e9ddfb": [
+    "33986c3a": [
       7,
       18
     ],
@@ -534,10 +534,6 @@
       9,
       20
     ],
-    "ec351fd2": [
-      7,
-      18
-    ],
     "e5b0f08e": [
       4,
       15
@@ -989,6 +985,10 @@
     "533ae044": [
       9,
       20
+    ],
+    "c86b071e": [
+      7,
+      18
     ],
     "9555cd52": [
       4,

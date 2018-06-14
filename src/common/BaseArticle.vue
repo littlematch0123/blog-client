@@ -20,7 +20,6 @@ export default {
   flex: 1;
   margin-top: 20px;
   overflow-y: auto;
-  font-size: 1.1em;
   line-height: 2;
   word-break: break-all;
 
@@ -32,12 +31,12 @@ export default {
     margin-bottom: 18px;
     border-bottom: 2px solid #efeaea;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.3em;
   }
 
   & h3 {
     margin: 12px 0 8px;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 1.2;
 
     &::after {
@@ -51,7 +50,7 @@ export default {
   & code {
     padding: .2em .4em;
     border-radius: 3px;
-    font-size: 85%;
+    font-size: 90%;
     background: rgba(27, 31, 35, .05);
   }
 
@@ -61,7 +60,6 @@ export default {
     border: 2px solid #ddd;
     border-radius: 4px;
     overflow-x: auto;
-    font-size: 12px;
     line-height: 1.6;
     background: #f8f8f8;
     -webkit-overflow-scrolling: touch;
@@ -78,7 +76,6 @@ export default {
 
   & table {
     width: 100%;
-    font-size: 12px;
     line-height: 1.5;
     text-align: center;
   }
