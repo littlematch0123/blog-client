@@ -22,7 +22,7 @@ export default {
   overflow-y: auto;
   line-height: 2;
   word-break: break-all;
-
+  font-size: 14px;
   & a {
     text-decoration: underline;
   }
@@ -90,6 +90,11 @@ export default {
     & iframe {
       max-width: 272px;
     }
+  }
+}
+@media all and (min-width: 900px) {
+  .main {
+    font-size: 16px;
   }
 }
 </style>
