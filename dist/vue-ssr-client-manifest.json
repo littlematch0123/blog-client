@@ -1,7 +1,7 @@
 {
   "publicPath": "https://static.xiaohuochai.site/client/",
   "all": [
-    "static/css/app.b657d0f5aa7765ac90c8c3a54f3e2d6d.css",
+    "static/css/app.c895344e16bb7868c3ddf22d00e3c93b.css",
     "static/img/react-big.282e404.jpg",
     "static/img/match-bg.0f9a8d7.jpg",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js",
@@ -11,10 +11,10 @@
     "static/js/post.61464f30c9840af83ce9.js",
     "static/js/home.0972c4d7fb3e0401d0ca.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
-    "static/js/app.5f47cbdbb7c5bb9e60d5.js",
+    "static/js/app.a74a3828d49d798e7206.js",
     "static/js/manifest.f34a9e0b604257ec8fdf.js",
     "static/img/vue-big.172586f.jpg",
-    "static/css/app.b657d0f5aa7765ac90c8c3a54f3e2d6d.css.map",
+    "static/css/app.c895344e16bb7868c3ddf22d00e3c93b.css.map",
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js.map",
     "static/js/user.a12db82c6aee30d894bf.js.map",
     "static/js/comment.72ad9303bdd707799515.js.map",
@@ -22,14 +22,14 @@
     "static/js/post.61464f30c9840af83ce9.js.map",
     "static/js/home.0972c4d7fb3e0401d0ca.js.map",
     "static/js/vendor.0c20caa6c98cd5dc3130.js.map",
-    "static/js/app.5f47cbdbb7c5bb9e60d5.js.map",
+    "static/js/app.a74a3828d49d798e7206.js.map",
     "static/js/manifest.f34a9e0b604257ec8fdf.js.map",
     "static/favicon.ico"
   ],
   "initial": [
     "static/js/manifest.f34a9e0b604257ec8fdf.js",
     "static/js/vendor.0c20caa6c98cd5dc3130.js",
-    "static/js/app.5f47cbdbb7c5bb9e60d5.js"
+    "static/js/app.a74a3828d49d798e7206.js"
   ],
   "async": [
     "static/js/vendor-async.fc9b383ce2b4a09ac933.js",
@@ -359,6 +359,11 @@
       4,
       15
     ],
+    "8370d4b6": [
+      10,
+      0,
+      21
+    ],
     "5a8959dd": [
       9,
       20
@@ -443,6 +448,11 @@
       9,
       20
     ],
+    "6a652784": [
+      10,
+      0,
+      21
+    ],
     "29c4f5ea": [
       9,
       20
@@ -483,11 +493,6 @@
     "9031b754": [
       9,
       20
-    ],
-    "0e015f4a": [
-      10,
-      0,
-      21
     ],
     "76a5fd0f": [
       9,
@@ -945,12 +950,7 @@
       9,
       20
     ],
-    "270d0c7c": [
-      10,
-      0,
-      21
-    ],
-    "73e8783b": [
+    "3af54d86": [
       10,
       0,
       21
