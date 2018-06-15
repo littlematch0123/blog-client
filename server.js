@@ -36,7 +36,7 @@ app.get('*', (req, res) => {
     if (err) {
       return handleError(err)
     }
-    res.send(minify(html, { collapseWhitespace: true}))
+    res.send(minify(html, { collapseWhitespace: true, minifyCSS: true}))
   })
 })
 
