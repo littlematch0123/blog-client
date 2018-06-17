@@ -27,6 +27,7 @@ import AlertWithLoading from '@/components/Alert/AlertWithLoading'
 import { HIDE_ALERTTEXT } from '@/components/Alert/module'
 import { SET_HEIGHT } from '@/components/Size/module'
 import { ADMIN_URL } from '@/constants/API'
+import { throttle } from '@/utils/util'
 
 export default {
   components: {
@@ -60,25 +61,23 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('devicemotion', this.testShake)
+    window.addEventListener('devicemotion', throttle(this.testShake))
     this.setWrapHeight()
   },
   destroyed() {
-    window.removeEventListener('devicemotion', this.testShake)
+    window.removeEventListener('devicemotion', throttle(this.testShake))
   },
   methods: {
     testShake(e) {
-      requestAnimationFrame(() => {
-        const { x, y, z } = e.accelerationIncludingGravity
-        const { lastX, lastY, lastZ } = this
-        const nowRange = Math.abs(lastX - x) + Math.abs(lastY - y) + Math.abs(lastZ - z)
-        if (nowRange > 80) {
-          window.location.href = ADMIN_URL
-        }
-        this.lastX = x
-        this.lastY = y
-        this.lastZ = z
-      })
+      const { x, y, z } = e.accelerationIncludingGravity
+      const { lastX, lastY, lastZ } = this
+      const nowRange = Math.abs(lastX - x) + Math.abs(lastY - y) + Math.abs(lastZ - z)
+      if (nowRange > 80) {
+        window.location.href = ADMIN_URL
+      }
+      this.lastX = x
+      this.lastY = y
+      this.lastZ = z
     },
     setWrapHeight() {
       this.$store.commit(SET_HEIGHT, { height: document.documentElement.clientHeight })

@@ -18,6 +18,7 @@ import BaseMask from '@/common/BaseMask'
 import UserMenuList from '@/components/User/UserMenuList'
 import { SIGNIN } from '@/components/User/module'
 import { mapState } from 'vuex'
+import { throttle } from '@/utils/util'
 
 export default {
   components: {
@@ -42,11 +43,11 @@ export default {
     // 自动登录
     this.autoLogin()
     // 监测陀螺仪
-    window.addEventListener('deviceorientation', this.changeBeta)
+    window.addEventListener('deviceorientation', throttle(this.changeBeta))
   },
   destroyed() {
     // 取消监测
-    window.removeEventListener('deviceorientation', this.changeBeta)
+    window.removeEventListener('deviceorientation', throttle(this.changeBeta))
   },
   methods: {
     autoLogin() {
@@ -69,11 +70,9 @@ export default {
       }
     },
     changeBeta(e) {
-      requestAnimationFrame(() => {
-        if (this.beta !== Math.round(e.beta)) {
-          this.beta = Math.round(e.beta)
-        }
-      })
+      if (this.beta !== Math.round(e.beta)) {
+        this.beta = Math.round(e.beta)
+      }
     }
   }
 }
