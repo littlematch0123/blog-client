@@ -7,8 +7,8 @@ import async from './utils/async'
 
 Vue.use(async)
 Vue.use(VueLazyload, {
-  observer: true,
   loading: require('./assets/imgs/loading.gif'),
+  listenEvents: ['scroll'],
   filter: {
     webp(listener, options) {
       if (!options.supportWebp) return
