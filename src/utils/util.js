@@ -83,12 +83,10 @@ export const getCategoryNumbers = number => {
  * @param {fn} function test(){}
  * @return {fn} function test(){}
  */
-export const throttle = (fn, wait = 100) => {
-  return function () {
-    if (fn.timer) return
-    fn.timer = setTimeout(() => {
-      fn.apply(this, arguments)
-      fn.timer = null
-    }, wait)
-  }
+export const throttle = (fn, wait = 100) => function func(...args) {
+  if (fn.timer) return
+  fn.timer = setTimeout(() => {
+    fn.apply(this, args)
+    fn.timer = null
+  }, wait)
 }

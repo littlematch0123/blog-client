@@ -9,7 +9,7 @@
     "static/js/post.f5ca70d2d68cd359546a.js",
     "static/js/home.cd9c6ad8f89aa4e8a22d.js",
     "static/js/vendor.b08a501934b9ac8bf748.js",
-    "static/js/app.93c120ea549c4a0d7492.js",
+    "static/js/app.b80548b2dd159ec0c4ca.js",
     "static/js/manifest.db0bd9717359b8e10706.js",
     "static/js/vendor-async.25a1f0c3688a81c6d087.js",
     "static/js/user.896e8ba97067c43a8094.js.map",
@@ -18,14 +18,14 @@
     "static/js/post.f5ca70d2d68cd359546a.js.map",
     "static/js/home.cd9c6ad8f89aa4e8a22d.js.map",
     "static/js/vendor.b08a501934b9ac8bf748.js.map",
-    "static/js/app.93c120ea549c4a0d7492.js.map",
+    "static/js/app.b80548b2dd159ec0c4ca.js.map",
     "static/js/manifest.db0bd9717359b8e10706.js.map",
     "static/favicon.ico"
   ],
   "initial": [
     "static/js/manifest.db0bd9717359b8e10706.js",
     "static/js/vendor.b08a501934b9ac8bf748.js",
-    "static/js/app.93c120ea549c4a0d7492.js"
+    "static/js/app.b80548b2dd159ec0c4ca.js"
   ],
   "async": [
     "static/js/user.896e8ba97067c43a8094.js",
