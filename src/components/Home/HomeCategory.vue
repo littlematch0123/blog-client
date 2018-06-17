@@ -5,8 +5,8 @@
       <router-link :class="$style['header-link']" to="/categories" >更多类别</router-link>
     </header>
     <ul
+      v-lazy:background-image="require('@/assets/imgs/match-bg.jpg')"
       :class="$style['main']"
-      :style="{'background-image': `url(${require('@/assets/imgs/match-bg.jpg')})`}"
     >
       <li
         v-for="item in categoryDatas"

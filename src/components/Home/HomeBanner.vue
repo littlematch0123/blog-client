@@ -18,7 +18,7 @@
           :class="$style['panel-img']"
           :src="el.src"
           :alt="el.name"
-          :srcset="`${el.src} 800w, ${el.bigSrc} 1600w`" >
+        >
       </li>
     </ul>
     <ul :class="$style.dotBox">
@@ -38,35 +38,30 @@ const imgDatas = [
     id: '1',
     name: 'HTML',
     src: require('@/assets/imgs/html.png'),
-    bigSrc: require('@/assets/imgs/html.png'),
     url: '/categories/1000000000'
   },
   {
     id: '2',
     name: 'CSS',
     src: require('@/assets/imgs/css.png'),
-    bigSrc: require('@/assets/imgs/css.png'),
     url: '/categories/1100000000'
   },
   {
     id: '3',
     name: 'JavaScript',
     src: require('@/assets/imgs/javascript.png'),
-    bigSrc: require('@/assets/imgs/javascript.png'),
     url: '/categories/1200000000'
   },
   {
     id: '4',
     name: 'Vue',
     src: require('@/assets/imgs/vue.png'),
-    bigSrc: require('@/assets/imgs/vue-big.jpg'),
     url: '/categories/1403000000'
   },
   {
     id: '5',
     name: 'React',
     src: require('@/assets/imgs/react.png'),
-    bigSrc: require('@/assets/imgs/react-big.jpg'),
     url: '/categories/1404000000'
   }
 ]

@@ -6,9 +6,9 @@
     </header>
     <ul>
       <li
+        v-lazy:background-image="item.imgUrl"
         v-for="item in recommendPosts"
         :class="$style['main-item']"
-        :style="{'background-image': `url(${item.imgUrl})`}"
         :key="item._id"
         @click="$router.push(`/posts/${item._id}`)"
       >
@@ -20,13 +20,10 @@
 </template>
 
 <script>
-import { getUrlWithWebp } from '@/utils/util'
-
 export default {
   computed: {
     recommendPosts() {
       return this.$store.getters.getRecommendPosts
-        .map(item => Object.assign(item, { imgUrl: getUrlWithWebp(item.imgUrl) }))
     }
   }
 }

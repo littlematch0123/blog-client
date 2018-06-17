@@ -18,6 +18,7 @@
     "html-minifier": "^3.5.16",
     "marked": "^0.4.0",
     "vue": "^2.5.2",
+    "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
