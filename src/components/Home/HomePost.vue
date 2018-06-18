@@ -4,7 +4,7 @@
       <h4>推荐文章</h4>
       <router-link :class="$style['header-link']" to="/posts" >更多文章</router-link>
     </header>
-    <ul>
+    <ul :class="$style.main">
       <li
         v-lazy:background-image="item.imgUrl"
         v-for="item in recommendPosts"
@@ -53,6 +53,10 @@ export default {
   }
 }
 
+.main {
+  height: 430px;
+}
+
 .main-item {
   position: relative;
   margin: 10px 0;
@@ -91,6 +95,9 @@ export default {
 }
 
 @media all and (min-width: 900px) {
+  .main {
+    height: 670px;
+  }
   .main-item-txt {
     line-height: 160px;
   }

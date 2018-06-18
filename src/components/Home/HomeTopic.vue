@@ -57,6 +57,7 @@ export default {
 .main {
   display: flex;
   flex-wrap: wrap;
+  min-height: 176px;
 }
 
 .item {
@@ -78,6 +79,10 @@ export default {
 }
 
 @media all and (min-width: 900px) {
+  .main {
+    min-height: 276px;
+  }
+
   .item {
     font-size: 1.1em;
     line-height: 3;
