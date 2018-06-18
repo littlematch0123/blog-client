@@ -8,7 +8,7 @@ const resolve = file => path.resolve(__dirname, file)
 
 const renderer = createBundleRenderer(require('./dist/vue-ssr-server-bundle.json'), {
   runInNewContext: false,
-  template: fs.readFileSync(resolve('./index.html'), 'utf-8'),
+  template: fs.readFileSync(resolve('./index.template.html'), 'utf-8'),
   clientManifest: require('./dist/vue-ssr-client-manifest.json'),
   basedir: resolve('./dist')
 })

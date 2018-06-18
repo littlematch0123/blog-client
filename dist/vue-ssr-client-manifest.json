@@ -9,7 +9,7 @@
     "static/js/post.5ca287bdf3d69bbd0764.js",
     "static/js/home.9b2a0ab2371f3ce66d95.js",
     "static/js/runtime.8be2ab659236d35bd012.js",
-    "static/js/app.f76c36a556ff34b3d46b.js",
+    "static/js/app.adf6c9ad779cecb6786a.js",
     "static/js/vendors~post.0a9f6255d39bd15e2030.js",
     "static/js/user.7d94284aff36e346feb4.js.map",
     "static/js/category.4a9d7282ab09dad75100.js.map",
@@ -17,12 +17,12 @@
     "static/js/post.5ca287bdf3d69bbd0764.js.map",
     "static/js/home.9b2a0ab2371f3ce66d95.js.map",
     "static/js/runtime.8be2ab659236d35bd012.js.map",
-    "static/js/app.f76c36a556ff34b3d46b.js.map",
+    "static/js/app.adf6c9ad779cecb6786a.js.map",
     "static/favicon.ico"
   ],
   "initial": [
     "static/js/runtime.8be2ab659236d35bd012.js",
-    "static/js/app.f76c36a556ff34b3d46b.js"
+    "static/js/app.adf6c9ad779cecb6786a.js"
   ],
   "async": [
     "static/js/user.7d94284aff36e346feb4.js",
