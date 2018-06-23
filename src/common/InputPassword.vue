@@ -4,6 +4,8 @@
       :class="$style.input"
       :placeholder="placeholder"
       :value="value"
+      autocomplete="off"
+      autocapitalize="off"
       type="password"
       @input="$emit('input',$event.target.value)"
     >
@@ -14,6 +16,8 @@
       :class="$style.input"
       :placeholder="placeholder"
       :value="value"
+      autocomplete="off"
+      autocapitalize="off"
       type="text"
       @input="$emit('input',$event.target.value)"
     >

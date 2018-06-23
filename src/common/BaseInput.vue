@@ -1,5 +1,11 @@
 <template>
-  <input :class="$style.input" :value="value" @input="$emit('input', $event.target.value)">
+  <input
+    :class="$style.input"
+    :value="value"
+    autocomplete="off"
+    autocapitalize="off"
+    @input="$emit('input', $event.target.value)"
+  >
 </template>
 <script>
 export default {

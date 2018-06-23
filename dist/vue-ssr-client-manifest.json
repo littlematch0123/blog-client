@@ -3,32 +3,32 @@
   "all": [
     "static/js/vendors~post.0a9f6255d39bd15e2030.js.map",
     "static/img/match-bg.0f9a8d7.jpg",
-    "static/js/user.7d94284aff36e346feb4.js",
+    "static/js/user.f48e0df4a8a71ec4debd.js",
     "static/js/category.29480082942860204b92.js",
     "static/js/comment.4d2294aa8c4801287b62.js",
-    "static/js/post.f7bebc43287a1d80a0cb.js",
+    "static/js/post.1614967d653bf5f10d08.js",
     "static/js/home.06ec7c8b0bdaaa707278.js",
-    "static/js/runtime.ba5be8a89e52f3526307.js",
+    "static/js/runtime.4b202be9da9af6d64b09.js",
     "static/js/app.f94b2470fdc34a0b3739.js",
     "static/js/vendors~post.0a9f6255d39bd15e2030.js",
-    "static/js/user.7d94284aff36e346feb4.js.map",
+    "static/js/user.f48e0df4a8a71ec4debd.js.map",
     "static/js/category.29480082942860204b92.js.map",
     "static/js/comment.4d2294aa8c4801287b62.js.map",
-    "static/js/post.f7bebc43287a1d80a0cb.js.map",
+    "static/js/post.1614967d653bf5f10d08.js.map",
     "static/js/home.06ec7c8b0bdaaa707278.js.map",
-    "static/js/runtime.ba5be8a89e52f3526307.js.map",
+    "static/js/runtime.4b202be9da9af6d64b09.js.map",
     "static/js/app.f94b2470fdc34a0b3739.js.map",
     "static/favicon.ico"
   ],
   "initial": [
-    "static/js/runtime.ba5be8a89e52f3526307.js",
+    "static/js/runtime.4b202be9da9af6d64b09.js",
     "static/js/app.f94b2470fdc34a0b3739.js"
   ],
   "async": [
-    "static/js/user.7d94284aff36e346feb4.js",
+    "static/js/user.f48e0df4a8a71ec4debd.js",
     "static/js/category.29480082942860204b92.js",
     "static/js/comment.4d2294aa8c4801287b62.js",
-    "static/js/post.f7bebc43287a1d80a0cb.js",
+    "static/js/post.1614967d653bf5f10d08.js",
     "static/js/home.06ec7c8b0bdaaa707278.js",
     "static/js/vendors~post.0a9f6255d39bd15e2030.js"
   ],
@@ -572,7 +572,7 @@
       2,
       10
     ],
-    "0e2cef11": [
+    "c364c93c": [
       2,
       10
     ],
