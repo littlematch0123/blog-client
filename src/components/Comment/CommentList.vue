@@ -56,7 +56,10 @@ export default {
   },
   computed: {
     userId() {
-      return this.$store.state.auth.user._id
+      const { user } = this.$store.state.auth
+      console.log(user)
+      if (!user) return ''
+      return user._id
     },
     postId() {
       return this.$route.params.postid
