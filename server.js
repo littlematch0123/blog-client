@@ -12,7 +12,11 @@ const renderer = createBundleRenderer(require('./dist/vue-ssr-server-bundle.json
   clientManifest: require('./dist/vue-ssr-client-manifest.json'),
   basedir: resolve('./dist')
 })
-app.use(express.static(path.join(__dirname, 'dist')))
+app.use('/dist',express.static(path.join(__dirname, 'dist')))
+app.use('/manifest.json', express.static(path.join(__dirname, 'manifest.json')))
+app.use('/public', express.static(path.join(__dirname, 'public')))
+app.use('/service-worker.js', express.static(path.join(__dirname, 'dist/service-worker.js')))
+
 app.get('*', (req, res) => {
   res.setHeader('Content-Type', 'text/html')
   const handleError = err => {
