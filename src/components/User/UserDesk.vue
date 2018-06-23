@@ -54,7 +54,7 @@ export default {
       return this.$store.getters.getLikesByUserId(this.userId)
     }
   },
-  created() {
+  mounted() {
     this.$store.dispatch(LOAD_USER_ASYNC, { id: this.userId }).then(() => {
       this.datas = this.likes
     })
