@@ -18,6 +18,11 @@ export default function createRouter() {
         name: 'postlist'
       },
       {
+        path: '/posts/search',
+        component: () => import(/* webpackChunkName:'post' */ '@/components/Post/SearchPost'),
+        name: 'searchpost'
+      },
+      {
         path: '/posts/:postid',
         component: () => import(/* webpackChunkName:'post' */ '@/components/Post/Post'),
         name: 'post',

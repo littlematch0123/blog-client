@@ -3,9 +3,10 @@
     <BaseMask :class="$style.mask"/>
     <ul :class="$style.list">
       <li :class="$style.item" @click="$router.push('/')" ><SVGHome />主页</li>
-      <li :class="$style.item" @click="$router.go(0)" ><SVGRefresh />刷新</li>
-      <li :class="$style.item" @click="$router.push('/posts')" ><SVGFilter />筛选</li>
       <li :class="$style.item" @click="$router.push(`/users/${userId}`)" ><SVGUser />书桌</li>
+      <li :class="$style.item" @click="$router.push('/posts/search')" ><SVGSearch />搜索</li>
+      <li :class="$style.item" @click="$router.push('/posts')" ><SVGFilter />筛选</li>
+      <li :class="$style.item" @click="$router.go(0)" ><SVGRefresh />刷新</li>
       <li :class="$style.item" @click="onLogoutClick" ><SVGExit />退出</li>
     </ul>
   </BaseFullScreen>
@@ -16,6 +17,7 @@ import BaseFullScreen from '@/common/BaseFullScreen'
 import BaseMask from '@/common/BaseMask'
 import SVGHome from '@/common/SVG/SVGHome'
 import SVGUser from '@/common/SVG/SVGUser'
+import SVGSearch from '@/common/SVG/SVGSearch'
 import SVGExit from '@/common/SVG/SVGExit'
 import SVGFilter from '@/common/SVG/SVGFilter'
 import SVGRefresh from '@/common/SVG/SVGRefresh'
@@ -29,7 +31,8 @@ export default {
     SVGUser,
     SVGExit,
     SVGFilter,
-    SVGRefresh
+    SVGRefresh,
+    SVGSearch
   },
   props: {
     onExit: { type: Function, required: true }
