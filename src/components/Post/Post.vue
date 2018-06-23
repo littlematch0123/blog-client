@@ -79,6 +79,9 @@ export default {
       return this.$store.getters.getCommentsCountByPostId(this.postId)
     }
   },
+  mounted() {
+    !this.post && this.$store.dispatch(LOAD_POST_ASYNC, { id: this.postId })
+  },
   beforeDestroy() {
     this.$store.commit(CLEAR_POST)
   },
