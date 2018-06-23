@@ -1,7 +1,7 @@
 {
   "publicPath": "https://static.xiaohuochai.site/client/",
   "all": [
-    "static/js/vendors~post.0a9f6255d39bd15e2030.js.map",
+    "static/js/post.eb393567e43c4c8ff510.js.map",
     "static/img/match-bg.0f9a8d7.jpg",
     "static/js/user.30a47e2e0ecdbe62be6c.js",
     "static/js/category.29480082942860204b92.js",
@@ -10,15 +10,23 @@
     "static/js/home.06ec7c8b0bdaaa707278.js",
     "static/js/runtime.729770e9791f1dacf740.js",
     "static/js/app.a1f1385836d13886bfbd.js",
-    "static/js/vendors~post.0a9f6255d39bd15e2030.js",
+    "static/js/vendors~post.0a9f6255d39bd15e2030.js.map",
     "static/js/user.30a47e2e0ecdbe62be6c.js.map",
     "static/js/category.29480082942860204b92.js.map",
     "static/js/comment.961c5a4eb29656d16204.js.map",
-    "static/js/post.eb393567e43c4c8ff510.js.map",
+    "static/js/vendors~post.0a9f6255d39bd15e2030.js",
     "static/js/home.06ec7c8b0bdaaa707278.js.map",
     "static/js/runtime.729770e9791f1dacf740.js.map",
     "static/js/app.a1f1385836d13886bfbd.js.map",
-    "static/favicon.ico"
+    "static/favicon.ico",
+    "static/logo/logo_32.png",
+    "static/logo/logo_48.png",
+    "static/logo/logo_144.png",
+    "static/logo/logo_128.png",
+    "static/logo/logo_192.png",
+    "static/logo/logo_96.png",
+    "static/logo/logo_256.png",
+    "static/manifest.json"
   ],
   "initial": [
     "static/js/runtime.729770e9791f1dacf740.js",
@@ -43,7 +51,7 @@
     ],
     "50590179": [
       5,
-      13
+      0
     ],
     "58903376": [
       8,
@@ -104,7 +112,7 @@
     ],
     "42ad158a": [
       5,
-      13
+      0
     ],
     "6577d117": [
       8,
@@ -135,8 +143,8 @@
       10
     ],
     "476f1728": [
-      9,
-      0
+      13,
+      9
     ],
     "513d1d58": [
       8,
@@ -219,7 +227,7 @@
     ],
     "59b9db56": [
       5,
-      13
+      0
     ],
     "67d77f86": [
       8,
@@ -304,7 +312,7 @@
     ],
     "5493f1ce": [
       5,
-      13
+      0
     ],
     "3318b990": [
       8,
@@ -361,7 +369,7 @@
     ],
     "00ac1f3c": [
       5,
-      13
+      0
     ],
     "559cbff5": [
       8,
@@ -541,7 +549,7 @@
     ],
     "3f21dad6": [
       5,
-      13
+      0
     ],
     "6af768e5": [
       8,
@@ -693,7 +701,7 @@
     ],
     "22f65417": [
       5,
-      13
+      0
     ],
     "7af5403e": [
       8,
@@ -705,7 +713,7 @@
     ],
     "a2caceac": [
       5,
-      13
+      0
     ],
     "2f7f4468": [
       8,
@@ -793,7 +801,7 @@
     ],
     "26552c12": [
       5,
-      13
+      0
     ],
     "0dcfb930": [
       2,
@@ -801,7 +809,7 @@
     ],
     "3c002cb9": [
       5,
-      13
+      0
     ],
     "42345e62": [
       8,
@@ -825,7 +833,7 @@
     ],
     "0db53a6e": [
       5,
-      13
+      0
     ],
     "5a92c926": [
       8,
@@ -861,7 +869,7 @@
     ],
     "9cac0fd0": [
       5,
-      13
+      0
     ],
     "647443be": [
       8,
@@ -930,7 +938,7 @@
     ],
     "68a10152": [
       5,
-      13
+      0
     ],
     "4591ed7a": [
       8,
@@ -1041,7 +1049,7 @@
     ],
     "163a8ff4": [
       5,
-      13
+      0
     ],
     "9031b754": [
       8,
@@ -1062,7 +1070,7 @@
     ],
     "7f7407ee": [
       5,
-      13
+      0
     ],
     "6c376eba": [
       8,
@@ -1103,7 +1111,7 @@
     ],
     "8945dcf4": [
       5,
-      13
+      0
     ],
     "4223eeae": [
       8,

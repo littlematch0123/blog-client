@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -83,6 +84,49 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new SWPrecacheWebpackPlugin({
+      dontCacheBustUrlsMatching: /\.\w{8}\./,
+      filename: 'service-worker.js',
+      logger(message) {
+        if (message.indexOf('Total precache size is') === 0) {
+          return;
+        }
+        if (message.indexOf('Skipping static resource') === 0) {
+          return;
+        }
+        console.log(message);
+      },
+      minify: true,
+      navigateFallbackWhitelist: [/^(?!\/__).*/],
+      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      runtimeCaching: [{
+          urlPattern: '/',
+          handler: 'networkFirst'
+        },
+        {
+          urlPattern: /\/(posts|categories|topics|signup|signin_by_phonenumber|signin_by_username|users)/,
+          handler: 'networkFirst'
+        },
+        {
+          urlPattern: '/posts/:id',
+          handler: 'networkFirst'
+        },
+        {
+          urlPattern: '/categories/:id',
+          handler: 'networkFirst'
+        },
+        {
+          urlPattern: '/topics/:id',
+          handler: 'networkFirst'
+        },
+        {
+          urlPattern: '/users/:id',
+          handler: 'networkFirst'
+        },
+      ]
+    })
+  ],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
