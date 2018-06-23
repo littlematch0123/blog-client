@@ -57,7 +57,6 @@ export default {
   computed: {
     userId() {
       const { user } = this.$store.state.auth
-      console.log(user)
       if (!user) return ''
       return user._id
     },

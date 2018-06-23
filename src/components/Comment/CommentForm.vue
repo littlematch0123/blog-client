@@ -32,7 +32,8 @@ export default {
   computed: {
     userId() {
       const { user } = this.$store.state.auth
-      return user && user._id
+      if (!user) return ''
+      return user._id
     },
     postId() {
       return this.$route.params.postid
@@ -44,7 +45,7 @@ export default {
       return this.$store.getters.getCommentById(this.commentId)
     }
   },
-  created() {
+  mounted() {
     this.setTextAreaValue()
   },
   methods: {
