@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.wrap" :style="{height:wrapHeight+'px'}"><slot /></div>
+  <section :class="$style.wrap" :style="{height:wrapHeight+'px'}"><slot /></section>
 </template>
 <script>
 export default {

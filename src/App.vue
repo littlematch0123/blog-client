@@ -86,19 +86,21 @@ export default {
 }
 </script>
 <style module lang="postcss">
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html {
   height: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  background: #fafafa;
 }
 
 body {
   height: 100%;
   overflow: hidden;
+  background-color:#fafafa;
   background-image: linear-gradient(90deg, #f3f3f3 2px, transparent 0), linear-gradient(#f3f3f3 2px, transparent 0), linear-gradient(90deg, #f3f3f3 1px, transparent 0), linear-gradient(#f3f3f3 1px, transparent 0);
   background-size: 100px 100px, 100px 100px, 40px 40px, 40px 40px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 格式化边距及边框 */
@@ -121,12 +123,6 @@ ul {
   margin: 0;
 }
 
-input,
-button {
-  padding: 0;
-  border: none;
-}
-
 fieldset,
 img {
   border: 0;
@@ -141,7 +137,6 @@ textarea {
   font: 12px/1.2 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
-/* 电脑端初始字体大小为16px */
 @media all and (min-width: 900px) {
   body,
   button,
@@ -165,12 +160,14 @@ a {
 }
 
 /* 表单格式化 */
-input {
-  -webkit-appearance: none;
-}
-
-button {
+input,
+button,
+textarea {
+  padding: 0;
+  border: none;
+  outline: none;
   background: none;
+  -webkit-appearance: none;
 }
 
 /* 代码片断 */

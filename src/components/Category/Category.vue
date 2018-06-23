@@ -1,8 +1,8 @@
 <template>
-  <article v-if="category" :class="$style.article">
+  <article v-if="category" :class="$style.box">
     <BaseBack @click.native="$router.push('/categories')">类别列表</BaseBack>
     <BaseTitle>{{ category.name }}知识体系</BaseTitle>
-    <main :class="$style.main">
+    <section :class="$style.main">
       <p :class="$style.description">{{ category.description }}</p>
       <dl v-for="(item, index) in childCategories" :key="index">
         <dt>
@@ -18,7 +18,7 @@
           })"
         >{{ innerItem.title }}</dd>
       </dl>
-    </main>
+    </section>
   </article>
 </template>
 <script>
@@ -46,7 +46,7 @@ export default {
 }
 </script>
 <style  module lang="postcss">
-.article {
+.box {
   display: flex;
   flex-flow: column;
   align-items: flex-start;

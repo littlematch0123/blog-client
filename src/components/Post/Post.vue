@@ -2,6 +2,9 @@
   <BaseFullScreen v-if="post" :class="$style.wrap">
     <header :class="$style.topBox">
       <BaseBack @click.native="$router.push($route.params.parentPath || '/')">返回</BaseBack>
+      <div :class="$style.contentBox" titles="titles" @click="doShowContent=true">
+        <SVGContent width="30" height="30" />&nbsp;目录
+      </div>
       <ul :class="$style.controlBox">
         <li :class="$style.control" @click="toggleLike">
           <SVGLike :fill="like ? '#f00' : '#000'" />
@@ -13,25 +16,27 @@
         </li>
       </ul>
     </header>
-    <BaseCard :class="$style.article">
+    <article :class="$style.article">
       <BaseTitle>{{ post.title }}</BaseTitle>
-      <BreadCrumb :class="$style.breadCrumb" :datas="post.titleDatas"/>
-      <BaseArticle :value="post.text" />
-    </BaseCard>
+      <BreadCrumb :class="$style.breadCrumb" :datas="post.titleDatas" />
+      <BaseArticle :value="post.text" @translateTitles="getTitles" />
+    </article>
     <router-view />
+    <PostContent v-if="doShowContent" :titles="titles" @click.native="doShowContent=false" />
   </BaseFullScreen>
 </template>
 <script>
 import BaseFullScreen from '@/common/BaseFullScreen'
-import BaseCard from '@/common/BaseCard'
 import BaseBack from '@/common/BaseBack'
 import BaseArticle from '@/common/BaseArticle'
 import BaseTitle from '@/common/BaseTitle'
 import BreadCrumb from '@/common/BreadCrumb'
 import { LOAD_POST_ASYNC, CLEAR_POST } from '@/components/Post/module'
 import { ADD_LIKE_ASYNC, DELETE_LIKE_ASYNC } from '@/components/Like/module'
+import SVGContent from '@/common/SVG/SVGContent'
 import SVGLike from '@/common/SVG/SVGLike'
 import SVGComment from '@/common/SVG/SVGComment'
+import PostContent from './PostContent'
 
 export default {
   asyncData({ store, route }) {
@@ -39,13 +44,20 @@ export default {
   },
   components: {
     BaseFullScreen,
-    BaseCard,
     BaseBack,
     BreadCrumb,
     BaseArticle,
     BaseTitle,
+    PostContent,
+    SVGContent,
     SVGLike,
     SVGComment
+  },
+  data() {
+    return {
+      titles: [],
+      doShowContent: false
+    }
   },
   computed: {
     user() {
@@ -71,6 +83,9 @@ export default {
     this.$store.commit(CLEAR_POST)
   },
   methods: {
+    getTitles(value) {
+      this.titles = value
+    },
     toggleLike() {
       const { dispatch } = this.$store
       if (this.testWhetherDoLogin()) {
@@ -105,6 +120,14 @@ export default {
 .topBox {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .controlBox {
@@ -118,7 +141,15 @@ export default {
 }
 
 .article {
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
   height: calc(100% - 50px);
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12);
 }
 
 .breadCrumb {

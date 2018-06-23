@@ -115,7 +115,7 @@ const comment = {
     },
     /* 保存增加的评论到评论数组中 */
     [ADD_COMMENT](state, payload) {
-      state.docs = [...state.docs, payload]
+      state.docs = [payload, ...state.docs]
     },
     /* 更新评论 */
     [UPDATE_COMMENT](state, payload) {

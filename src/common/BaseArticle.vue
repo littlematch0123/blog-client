@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.main" v-html="compiledMarksdown" />
+  <div :class="$style.main" v-html="article" />
 </template>
 <script>
 import marked from 'marked'
@@ -8,9 +8,30 @@ export default {
   props: {
     value: { type: String, default: '' }
   },
+  data() {
+    return {
+      article: '',
+      titles: []
+    }
+  },
   computed: {
-    compiledMarksdown() {
+    initalArticle() {
       return marked(this.value, { headerIds: false })
+    }
+  },
+  mounted() {
+    this.buildArticle()
+  },
+  methods: {
+    buildArticle() {
+      const reg = /<h3>(.*)<\/h3>/g
+      let i = 0
+      this.article = this.initalArticle.replace(reg, (match, m1) => {
+        this.titles = [...this.titles, m1]
+        i += 1
+        return `<h3 id="anchor${i}">${m1}</h3>`
+      })
+      this.$emit('translateTitles', this.titles)
     }
   }
 }

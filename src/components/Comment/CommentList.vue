@@ -24,7 +24,7 @@
                 @click.native="$router.push(`/posts/${postId}/comments/${item._id}/delete`)"
               >删除</BaseButton>
             </div>
-            <span>{{ index + 1 }}楼</span>
+            <span>{{ len - index }}楼</span>
           </header>
           <p :class="$style.paragraph">{{ item.content }}</p>
         </li>
@@ -63,6 +63,9 @@ export default {
     },
     comments() {
       return this.$store.getters.getCommentsByPostId(this.postId)
+    },
+    len() {
+      return this.comments.length
     }
   }
 }
