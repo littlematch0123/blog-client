@@ -109,23 +109,7 @@ module.exports = {
         {
           urlPattern: /\/(posts|categories|users|likes|comments)/,
           handler: 'networkFirst'
-        },
-        {
-          urlPattern: '/posts/:id',
-          handler: 'networkFirst'
-        },
-        {
-          urlPattern: '/categories/:id',
-          handler: 'networkFirst'
-        },
-        {
-          urlPattern: '/topics/:id',
-          handler: 'networkFirst'
-        },
-        {
-          urlPattern: '/users/:id',
-          handler: 'networkFirst'
-        },
+        }
       ]
     })
   ],
