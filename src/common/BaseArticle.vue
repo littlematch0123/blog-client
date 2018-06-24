@@ -40,6 +40,7 @@ export default {
 .main {
   flex: 1;
   margin-top: 20px;
+  overflow-x: hidden;
   overflow-y: auto;
   line-height: 2;
   word-break: break-all;
