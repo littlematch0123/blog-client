@@ -44,6 +44,7 @@ export default {
   line-height: 2;
   word-break: break-all;
   font-size: 14px;
+  -webkit-overflow-scrolling: touch;
   & a {
     text-decoration: underline;
   }
