@@ -12,9 +12,9 @@ const renderer = createBundleRenderer(require('./dist/vue-ssr-server-bundle.json
   clientManifest: require('./dist/vue-ssr-client-manifest.json'),
   basedir: resolve('./dist')
 })
-app.use('/dist',express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'dist')))
 app.use('/manifest.json', express.static(path.join(__dirname, 'manifest.json')))
-app.use('/public', express.static(path.join(__dirname, 'public')))
+app.use('/logo', express.static(path.join(__dirname, 'logo')))
 app.use('/service-worker.js', express.static(path.join(__dirname, 'dist/service-worker.js')))
 
 app.get('*', (req, res) => {
@@ -32,7 +32,7 @@ app.get('*', (req, res) => {
   }
 
   const context = {
-    title: '小火柴的前端小站',
+    title: '前端小站',
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {

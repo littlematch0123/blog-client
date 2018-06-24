@@ -97,15 +97,17 @@ module.exports = {
         }
         console.log(message);
       },
+      navigateFallback: 'https://www.xiaohuochai.cc',
       minify: true,
       navigateFallbackWhitelist: [/^(?!\/__).*/],
-      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      dontCacheBustUrlsMatching: /./,
+      staticFileGlobsIgnorePatterns: [/\.map$/, /\.json$/],
       runtimeCaching: [{
           urlPattern: '/',
           handler: 'networkFirst'
         },
         {
-          urlPattern: /\/(posts|categories|topics|signup|signin_by_phonenumber|signin_by_username|users)/,
+          urlPattern: /\/(posts|categories|users|likes|comments)/,
           handler: 'networkFirst'
         },
         {
