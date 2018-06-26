@@ -76,7 +76,7 @@ export default {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(255, 255, 255, .4);
 }
 
 .input {
