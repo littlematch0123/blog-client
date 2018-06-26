@@ -46,7 +46,11 @@ export default {
     }
   },
   mounted() {
-    this.setTextAreaValue()
+    if (this.comment) {
+      this.setTextAreaValue()
+    } else {
+      this.$router.push(`/posts/${this.postId}/comments`)
+    }
   },
   methods: {
     setTextAreaValue() {
