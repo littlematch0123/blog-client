@@ -53,7 +53,7 @@ export default {
   position: absolute;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   padding: 10px;
   overflow: auto;
   line-height: 2;
