@@ -148,6 +148,7 @@ export default {
 .screen {
   z-index: 1;
   background: #fff;
+
   & ::placeholder {
     color: #fff;
   }
@@ -182,6 +183,7 @@ export default {
 input.input {
   height: 40px;
 }
+
 .clear {
   position: absolute;
   top: 50%;
@@ -215,6 +217,7 @@ input.input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -229,6 +232,7 @@ input.input {
 
 .extendedItem {
   color: rgba(0, 0, 0, .6);
+
   &::after {
     position: static;
     content: '';

@@ -97,9 +97,9 @@ html {
 body {
   height: 100%;
   overflow: hidden;
-  background-color:#fafafa;
   background-image: linear-gradient(90deg, #f3f3f3 2px, transparent 0), linear-gradient(#f3f3f3 2px, transparent 0), linear-gradient(90deg, #f3f3f3 1px, transparent 0), linear-gradient(#f3f3f3 1px, transparent 0);
   background-size: 100px 100px, 100px 100px, 40px 40px, 40px 40px;
+  background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
 }
 

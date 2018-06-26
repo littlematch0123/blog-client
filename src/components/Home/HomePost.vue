@@ -98,6 +98,7 @@ export default {
   .main {
     height: 670px;
   }
+
   .main-item-txt {
     line-height: 160px;
   }

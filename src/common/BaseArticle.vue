@@ -42,10 +42,11 @@ export default {
   margin-top: 20px;
   overflow-x: hidden;
   overflow-y: auto;
+  font-size: 14px;
   line-height: 2;
   word-break: break-all;
-  font-size: 14px;
   -webkit-overflow-scrolling: touch;
+
   & a {
     text-decoration: underline;
   }
@@ -115,6 +116,7 @@ export default {
     }
   }
 }
+
 @media all and (min-width: 900px) {
   .main {
     font-size: 16px;

@@ -48,10 +48,15 @@ export default {
   opacity: 0;
   animation: opacity linear both .2s;
 }
+
 .list {
   position: absolute;
+  box-sizing: border-box;
   width: 100%;
+  height: 100%;
   padding: 10px;
+  overflow: auto;
+  line-height: 2;
   color: rgba(0, 0, 0, .8);
   background: #fff;
   transform: translateY(-100%);
