@@ -6,29 +6,29 @@
     "static/js/user.f5c972336ca01f29b22c.js",
     "static/js/category.5c079b88067be1d2bbe9.js",
     "static/js/comment.6431b9731d4fa54b2925.js",
-    "static/js/post.0423e72b6bc3988a287c.js",
+    "static/js/post.456c8712f8ea303ef54d.js",
     "static/js/home.5d53e60bd8dbe4d95cc3.js",
-    "static/js/runtime.e62ec42f77eaa3e26f92.js",
+    "static/js/runtime.b9b7b99b0cea7213356e.js",
     "static/js/app.86e41483baf5543cb4d1.js",
     "static/js/vendors~post.eda0d41e0a963ddc3ed3.js",
     "static/js/user.f5c972336ca01f29b22c.js.map",
     "static/js/category.5c079b88067be1d2bbe9.js.map",
     "static/js/comment.6431b9731d4fa54b2925.js.map",
-    "static/js/post.0423e72b6bc3988a287c.js.map",
+    "static/js/post.456c8712f8ea303ef54d.js.map",
     "static/js/home.5d53e60bd8dbe4d95cc3.js.map",
-    "static/js/runtime.e62ec42f77eaa3e26f92.js.map",
+    "static/js/runtime.b9b7b99b0cea7213356e.js.map",
     "static/js/app.86e41483baf5543cb4d1.js.map",
     "static/favicon.ico"
   ],
   "initial": [
-    "static/js/runtime.e62ec42f77eaa3e26f92.js",
+    "static/js/runtime.b9b7b99b0cea7213356e.js",
     "static/js/app.86e41483baf5543cb4d1.js"
   ],
   "async": [
     "static/js/user.f5c972336ca01f29b22c.js",
     "static/js/category.5c079b88067be1d2bbe9.js",
     "static/js/comment.6431b9731d4fa54b2925.js",
-    "static/js/post.0423e72b6bc3988a287c.js",
+    "static/js/post.456c8712f8ea303ef54d.js",
     "static/js/home.5d53e60bd8dbe4d95cc3.js",
     "static/js/vendors~post.eda0d41e0a963ddc3ed3.js"
   ],
@@ -707,7 +707,7 @@
       4,
       12
     ],
-    "54aa2586": [
+    "21f7713f": [
       5,
       13
     ],

@@ -1,16 +1,16 @@
 <template>
   <BaseFullScreen>
     <BaseMask :class="$style.mask"/>
-    <nav :class="$style.list">
-      <a
+    <ul :class="$style.list">
+      <li
         v-for="(item, index) in titles"
         :key="item"
         :class="$style.item"
-        :href="`#anchor${index + 1}`"
+        @click="onChangeAnchor(`anchor${index+1}`)"
       >
         {{ index + 1 }}、{{ item }}
-      </a>
-    </nav>
+      </li>
+    </ul>
   </BaseFullScreen>
 </template>
 <script>
@@ -26,6 +26,11 @@ export default {
     titles: {
       type: Array,
       default: () => []
+    }
+  },
+  methods: {
+    onChangeAnchor(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
     }
   }
 }
