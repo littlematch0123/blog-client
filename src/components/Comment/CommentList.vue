@@ -7,7 +7,8 @@
     <BaseCard :class="$style.article">
       <BaseTitle>评论列表</BaseTitle>
       <ul :class="$style.commentBox">
-        <li v-for="(item, index) in comments" :key="index" :class="$style.comment">
+        <li v-if="!comments.length">暂无评论</li>
+        <li v-for="(item, index) in comments" v-else :key="index" :class="$style.comment">
           <header :class="$style.headerBox">
             <div :class="$style.avatarBox">
               <BaseAvatar v-if="item.user">{{ item.user.username }}</BaseAvatar>
