@@ -45,7 +45,7 @@ export default {
     // 监测陀螺仪
     window.addEventListener('deviceorientation', throttle(this.changeBeta))
   },
-  destroyed() {
+  beforeDestroy() {
     // 取消监测
     window.removeEventListener('deviceorientation', throttle(this.changeBeta))
   },

@@ -17,7 +17,6 @@
       </transition>
     </main>
   </div>
-
 </template>
 
 <script>
@@ -64,7 +63,7 @@ export default {
     window.addEventListener('devicemotion', throttle(this.testShake))
     this.setWrapHeight()
   },
-  destroyed() {
+  beforeDestroy() {
     window.removeEventListener('devicemotion', throttle(this.testShake))
   },
   methods: {

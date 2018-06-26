@@ -10,7 +10,6 @@
       <li :class="$style.item" @click="onLogoutClick" ><SVGExit />退出</li>
     </ul>
   </BaseFullScreen>
-
 </template>
 <script>
 import BaseFullScreen from '@/common/BaseFullScreen'
