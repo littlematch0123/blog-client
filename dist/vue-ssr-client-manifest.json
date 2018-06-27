@@ -3,31 +3,31 @@
   "all": [
     "static/js/vendors~post.eda0d41e0a963ddc3ed3.js.map",
     "static/img/match-bg.0f9a8d7.jpg",
-    "static/js/user.f5c972336ca01f29b22c.js",
+    "static/js/user.8346c196ae396af5e761.js",
     "static/js/category.5c079b88067be1d2bbe9.js",
-    "static/js/comment.60f2e5bfcdc4057b0205.js",
+    "static/js/comment.148680438bd1f97b5be1.js",
     "static/js/post.bdf4fec7f51ea2b60034.js",
     "static/js/home.25951320585d49cc1754.js",
-    "static/js/runtime.d7248b471c03a85f5e2f.js",
+    "static/js/runtime.8d5cdc40422a7d87f6bb.js",
     "static/js/app.4b94c917189187300de2.js",
     "static/js/vendors~post.eda0d41e0a963ddc3ed3.js",
-    "static/js/user.f5c972336ca01f29b22c.js.map",
+    "static/js/user.8346c196ae396af5e761.js.map",
     "static/js/category.5c079b88067be1d2bbe9.js.map",
-    "static/js/comment.60f2e5bfcdc4057b0205.js.map",
+    "static/js/comment.148680438bd1f97b5be1.js.map",
     "static/js/post.bdf4fec7f51ea2b60034.js.map",
     "static/js/home.25951320585d49cc1754.js.map",
-    "static/js/runtime.d7248b471c03a85f5e2f.js.map",
+    "static/js/runtime.8d5cdc40422a7d87f6bb.js.map",
     "static/js/app.4b94c917189187300de2.js.map",
     "static/favicon.ico"
   ],
   "initial": [
-    "static/js/runtime.d7248b471c03a85f5e2f.js",
+    "static/js/runtime.8d5cdc40422a7d87f6bb.js",
     "static/js/app.4b94c917189187300de2.js"
   ],
   "async": [
-    "static/js/user.f5c972336ca01f29b22c.js",
+    "static/js/user.8346c196ae396af5e761.js",
     "static/js/category.5c079b88067be1d2bbe9.js",
-    "static/js/comment.60f2e5bfcdc4057b0205.js",
+    "static/js/comment.148680438bd1f97b5be1.js",
     "static/js/post.bdf4fec7f51ea2b60034.js",
     "static/js/home.25951320585d49cc1754.js",
     "static/js/vendors~post.eda0d41e0a963ddc3ed3.js"
@@ -457,7 +457,7 @@
       8,
       16
     ],
-    "ae254de8": [
+    "7faae536": [
       4,
       12
     ],
@@ -830,7 +830,7 @@
       2,
       10
     ],
-    "6b1e0434": [
+    "6fb7e06f": [
       2,
       10
     ],

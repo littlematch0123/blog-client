@@ -13,7 +13,7 @@
             <div :class="$style.avatarBox">
               <BaseAvatar v-if="item.user">{{ item.user.username }}</BaseAvatar>
               <BaseAvatar v-else :class="$style.elseAvatar" >删</BaseAvatar>
-              <time :class="$style.time">{{ new Date(item.createdAt).toLocaleDateString() }}</time>
+              <time :class="$style.time">{{ (item.createdAt).match(/^.*(?=T)/)[0] }}</time>
             </div>
             <div v-if="item.user && (userId === item.user._id)" :class="$style.buttonBox" >
               <BaseButton

@@ -20,7 +20,7 @@
             params:{ postid: item.post._id, parentPath: $route.path }
           })"
         >
-          <time :class="$style.time">{{ new Date(item.createdAt).toLocaleDateString() }}</time>
+          <time>{{ (item.createdAt).match(/^.*(?=T)/)[0] }}</time>
           <span v-if="item.post" :class="$style.title" >{{ item.post.title }}</span>
           <span v-else :class="$style.extendedTitle" >该文章已删除</span>
         </li>
@@ -113,10 +113,6 @@ export default {
   &:nth-of-type(odd) {
     background: #fafafa;
   }
-}
-
-.time {
-  width: 60px;
 }
 
 .title,
